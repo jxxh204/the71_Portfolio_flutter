@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AppMenu extends StatelessWidget {
-  final menus = ['PORTFOLIO', 'ABOUT', 'CONTACT'];
+class AppSubMenu extends StatelessWidget {
+  final menus = ['All', 'Charactor', 'BX Design', 'Illustration'];
 
   List<Widget> navItem() {
     return menus.map((text) {
@@ -9,7 +9,7 @@ class AppMenu extends StatelessWidget {
         padding: EdgeInsets.only(left: 12),
         child: Text(text,
             style: TextStyle(
-              decoration: TextDecoration.none, //밑줄지움
+              decoration: TextDecoration.none,
               fontSize: 12,
               color: Colors.black87,
             )),
@@ -20,7 +20,7 @@ class AppMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.only(top: 100),
+        margin: EdgeInsets.all(20),
         // padding: EdgeInsets.all(30),
         child: Row(
             mainAxisAlignment: MainAxisAlignment.center,

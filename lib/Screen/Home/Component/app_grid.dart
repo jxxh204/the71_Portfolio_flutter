@@ -6,7 +6,7 @@ class AppGrid extends StatelessWidget {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [Text('hello world')],
+        children: [Text('hello Grid')],
       ),
     );
   }
