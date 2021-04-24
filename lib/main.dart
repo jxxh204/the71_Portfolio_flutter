@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the71/Screen/Home/home_screen.dart';
-// import 'package:the71/constant.dart';
+import 'package:the71/route.dart';
 
 void main() => runApp(The71());
 
@@ -11,9 +10,9 @@ class The71 extends StatelessWidget {
     return MaterialApp(
       title: appName,
       theme: ThemeData(
-        primaryColor: Colors.black, //???
+        primaryColor: Colors.white, //???
       ),
-      home: HomeScreen(),
+      routes: routes, //  route
     );
   }
 }

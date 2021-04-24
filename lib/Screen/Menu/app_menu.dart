@@ -7,12 +7,14 @@ class AppMenu extends StatelessWidget {
     return menus.map((text) {
       return Padding(
         padding: EdgeInsets.only(left: 12),
-        child: Text(text,
-            style: TextStyle(
-              decoration: TextDecoration.none, //밑줄지움
-              fontSize: 12,
-              color: Colors.black87,
-            )),
+        child: Text(
+          text,
+          style: TextStyle(
+            decoration: TextDecoration.none, //밑줄지움
+            fontSize: 12,
+            color: Colors.black87,
+          ),
+        ),
       );
     }).toList();
   }
@@ -22,8 +24,9 @@ class AppMenu extends StatelessWidget {
     return Container(
         margin: EdgeInsets.only(top: 100),
         // padding: EdgeInsets.all(30),
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[...navItem()]));
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+          ...navItem(),
+        ]));
   }
 }
