@@ -10,14 +10,7 @@ class ScreenPortfolio extends StatelessWidget {
         height: size.height,
         width: size.width,
         child: Column(
-          children: <Widget>[
-            AppMenu(),
-            RaisedButton(
-                child: Text('about 가기'),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/About');
-                })
-          ],
+          children: <Widget>[AppMenu()],
         ));
   }
 }

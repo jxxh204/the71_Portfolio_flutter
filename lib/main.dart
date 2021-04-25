@@ -10,7 +10,7 @@ class The71 extends StatelessWidget {
     return MaterialApp(
       title: appName,
       theme: ThemeData(
-        primaryColor: Colors.white, //???
+        primaryColor: Colors.blue, //???
       ),
       routes: routes, //  route
     );
