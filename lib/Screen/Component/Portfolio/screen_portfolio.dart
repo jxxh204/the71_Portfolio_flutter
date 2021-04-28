@@ -9,8 +9,6 @@ class ScreenPortfolio extends StatelessWidget {
     return Container(
         height: size.height,
         width: size.width,
-        child: Column(
-          children: <Widget>[AppMenu()],
-        ));
+        child: Column(children: <Widget>[AppMenu(), Text('Portfolio')]));
   }
 }
